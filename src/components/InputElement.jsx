@@ -34,9 +34,10 @@ const InputElement = ({item}) => {
     return (
            <FormGroup>
                <label htmlFor="">{label}</label>
-           { checkType.includes(type) ? (<input type={type} {...validation}/>) 
-                    : type === "select" ? <select>{item.options.map((option) => <option value={option} key={option}>{option}</option>)}</select>
-                    : null}
+                {checkType.includes(type) ? (<input type={type} {...validation}/>) 
+                    : type === "select" ? <select>{options.map((option) => <option value={option} key={option}>{option}</option>)}</select>
+                    : null
+                }
             </FormGroup>
         ) 
     }
