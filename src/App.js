@@ -1,5 +1,5 @@
 import './App.css';
-import FormPage from'./pages/FormPage/FormPage'
+import FormPage from'./components/FormPage'
 
 function App() {
   return (

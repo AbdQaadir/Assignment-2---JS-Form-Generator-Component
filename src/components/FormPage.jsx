@@ -1,5 +1,5 @@
 import React, {useCallback} from 'react';
-import FormGenerator from '../../components/FormGenerator';
+import FormGenerator from './FormGenerator';
 
 const form = [
   {

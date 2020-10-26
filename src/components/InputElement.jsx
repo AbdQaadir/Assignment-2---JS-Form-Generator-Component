@@ -30,11 +30,10 @@ const FormGroup = styled.div`
 `
 const InputElement = ({item}) => {
     const {type, validation, label, options} = item;
-    const checkType = ["text", "number", "email", "date", "time", "tel", "color", "file", "image", "password", "search", "url"]
     return (
            <FormGroup>
                <label htmlFor="">{label}</label>
-                {checkType.includes(type) ? (<input type={type} {...validation}/>) 
+                {type !== "select" ? (<input type={type} {...validation}/>) 
                     : type === "select" ? <select>{options.map((option) => <option value={option} key={option}>{option}</option>)}</select>
                     : null
                 }
