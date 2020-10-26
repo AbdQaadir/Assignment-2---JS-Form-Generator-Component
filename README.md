@@ -2,4 +2,4 @@
 
 # JS Form Generator Component
 
-Deployed Link [here](https://github.com/facebook/create-react-app).
+Deployed Link [here](https://mylawlegal-assessment.netlify.app/).
